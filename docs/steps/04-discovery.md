@@ -77,7 +77,7 @@ The owner reviewed the discovery on 2026-10-06 and approved the proposals as wri
 5. The tenant claim holds the tenant key; group claims hold group keys.
 6. `C:\work\Libraries.Infrastructure` is treated as a design reference only (reuse of its code is not assumed).
 
-**Still open**: which Entra ID claim is the provider's stable user ID, `oid` or `sub`. No answer was given; settle it in ADR-002 or ADR-003 before task T065.
+**Settled later (2026-10-06)**: the provider's stable user ID for Entra ID is `oid` (ADR-003).
 
 ## Resulting state
 

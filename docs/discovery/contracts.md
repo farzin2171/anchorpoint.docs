@@ -1,6 +1,6 @@
 # Contracts: Identity Server to User Service, and User Service to Tenant Middleware
 
-**Task**: T017 | **Status**: approved by the owner on 2026-10-06, except open question 1 | **Authoritative copy**: this file
+**Task**: T017 | **Status**: approved by the owner on 2026-10-06 | **Authoritative copy**: this file
 
 This is the first version of the two service contracts. When the contracts are finalized, each is
 published as a versioned DTO package; until then this document is the single source. The earlier
@@ -219,11 +219,11 @@ components:
 
 ## Owner review (2026-10-06)
 
-Approved as written: one tenant claim holding the tenant key (question 2), group claims holding keys (question 3), a temporary home for the DTO packages in the User Service repository (question 4), and the Tenant Middleware owning the tenant registry (question 5). **Question 1 stays open** (see below): no answer was given, so it must be settled in ADR-002 or ADR-003 before the Identity Server profile service (task T065) is built.
+Approved as written: one tenant claim holding the tenant key (question 2), group claims holding keys (question 3), a temporary home for the DTO packages in the User Service repository (question 4), and the Tenant Middleware owning the tenant registry (question 5). **Question 1 was settled on 2026-10-06**: for Entra ID, `providerUserId` is the `oid` claim (ADR-003).
 
 ## Open questions
 
-1. **Stable provider ID**: for Entra ID, is `providerUserId` the `oid` claim or `sub`? (`sub` is unique per application; `oid` is stable across applications. The source and production differ; unverified which Entra claim they read.)
+1. **Stable provider ID**: decided, `oid` for Entra ID (ADR-003). Unverified until the first Entra integration test confirms the claim is present.
 2. **Tenant claim value**: a readable tenant `key` (proposed) or a GUID? Production issues both `tenant` and `tenantId`.
 3. **Groups as keys or names**: proposed keys in the `group` claim.
 4. **Where the contract DTO packages live** until Track M exists (temporary home in the User Service repository, per task T048).

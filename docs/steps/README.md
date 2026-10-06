@@ -8,3 +8,4 @@ Steps committed in this repository, in reading order.
 | 02 | [02-ci-docs-checks.md](02-ci-docs-checks.md) | GitHub Actions: link check, Mermaid check, secret scan | _filled in when committed_ |
 | 03 | [03-process-templates.md](03-process-templates.md) | Step and step-report templates | _filled in when committed_ |
 | 04 | [04-discovery.md](04-discovery.md) | Discovery of the source projects: seven documents under `docs/discovery/` | _filled in when committed_ |
+| 05 | [05-step-plan-and-adrs.md](05-step-plan-and-adrs.md) | Cross-track step plan and ADR-001 to ADR-007 (proposed) | _filled in when committed_ |

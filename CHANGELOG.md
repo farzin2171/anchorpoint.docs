@@ -12,3 +12,4 @@ All notable changes to this repository are recorded here. The format follows
 - GitHub Actions CI (step 02): Markdown link check, Mermaid structural check (`tools/check-mermaid.ps1`), secret scan.
 - Step and step-report templates (step 03): `docs/process/step-template.md`, `docs/process/step-report-template.md`.
 - Discovery of the source projects (step 04): source analysis, comparison with production, commit map, infrastructure inventory, PostgreSQL migration notes, `Mini.UserService` split, draft contracts.
+- Step plan and ADR-001 to ADR-007 (step 05): `docs/step-plan.md`, `docs/adr/*` (proposed, pending owner approval).
