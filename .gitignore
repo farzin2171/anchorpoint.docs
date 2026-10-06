@@ -1,0 +1,20 @@
+# OS and editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.tmp
+*.swp
+
+## --- Identity platform: secrets and key material (constitution IV) ---
+*.jwk
+*.pem
+*.key
+*.snk
+*.p12
+.env
+.env.*
+appsettings.Local.json
+appsettings.*.Local.json
+secrets.json
+*.secrets.json
